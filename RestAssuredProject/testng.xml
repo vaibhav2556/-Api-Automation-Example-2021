@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  
+  <listeners>
+ <!-- <listener class-name="common.listners.ResultListners">
+  </listener>
+   -->
+    <listener class-name="common.listners.ExtentIReporterSuiteClassListenerAdapter">
+   </listener> 
+ 
+ 
+  </listeners>
+  
+  
+  <test thread-count="5" name="Test">
+  
+    <classes>
+      <class name="ApiAutomation.RestAssuredProject.Tc0004"/>
+      <class name="ApiAutomation.RestAssuredProject.TC0001"/>
+      <class name="ApiAutomation.RestAssuredProject.TC0008_PUT_Opeartion"/>
+      <class name="ApiAutomation.RestAssuredProject.TC0006_ListOfResource"/>
+      <class name="ApiAutomation.RestAssuredProject.TC0008Delete_Resource"/>
+      <class name="ApiAutomation.RestAssuredProject.TC0003"/>
+      <class name="ApiAutomation.RestAssuredProject.TC0002"/>
+      <class name="ApiAutomation.RestAssuredProject.TC000011Login"/>
+      <class name="ApiAutomation.RestAssuredProject.Tc0005_SingleUserNotFound"/>
+      <class name="ApiAutomation.RestAssuredProject.TC0007_CREATE"/>
+      <class name="ApiAutomation.RestAssuredProject.TC00010Delay_User"/>
+      <class name="ApiAutomation.RestAssuredProject.TC0009RegisterUser"/>
+       <class name="common.listners.OrangeHrm"/>
+    </classes>
+  </test> 
+   
+</suite> 
